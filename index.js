@@ -15,7 +15,7 @@ app.use(express.json());
 app.use('/user',userRouter);
 app.use('/util',utilRouter);
 app.use(express.static('./static/uploads'));
-const port = 5000;
+const port = process.env.PORT||5000;
 app.get('/',(req,res) => {
     res.send('Response from Express!');
 });
