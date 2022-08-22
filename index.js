@@ -11,7 +11,7 @@ const cors = require('cors');
 //middleware- passes information to some other route, doesn't give response
 
 // to parse json data into javascript object
-app.use(cors({origin : ['http://localhost:3000']}))
+app.use(cors({origin : ['http://localhost:3001']}))
 app.use(express.json());
 app.use('/user',userRouter);
 app.use('/util',utilRouter);
