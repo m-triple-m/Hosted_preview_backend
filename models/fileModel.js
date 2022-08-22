@@ -4,7 +4,8 @@ const scObj = new Schema({
     title: String,
     file: String,
     thumbnail: String,
-    createdAt : Date
+    createdAt : Date,
+    type: String
 })
 module.exports = model('files', scObj);
 
